@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BoardMatch")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e5da485b1b818822b6d81a2f24ab2778a72356f")]
 [assembly: System.Reflection.AssemblyProductAttribute("BoardMatch")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BoardMatch")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
