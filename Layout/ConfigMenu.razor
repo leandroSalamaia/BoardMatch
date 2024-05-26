@@ -4,11 +4,11 @@
 </MudDrawerHeader>
 <MudNavMenu>
     <MudList>
-        <div id="install">
-            <MudListItem Avatar="@Icons.Material.Filled.InstallMobile">
-                        Install Mobile App
-                    </MudListItem>
-                    <MudDivider DividerType="DividerType.Inset" />
+        <div id="installDiv" hidden>
+            <MudListItem id="installButton" Avatar="@Icons.Material.Filled.InstallMobile">
+                Install Mobile App
+            </MudListItem>
+            <MudDivider DividerType="DividerType.Inset"/>
         </div>
         <MudListItem>
             <MudThemeProvider @bind-IsDarkMode="@_isDarkMode" Theme="_theme"/>

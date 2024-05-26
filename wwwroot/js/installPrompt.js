@@ -4,11 +4,12 @@ let complete = false;
 window.addEventListener("beforeinstallprompt", (event) => {
     event.preventDefault();
     installPrompt = event;
-    console.log("install Prompt");
     const timeoutId = setTimeout(function(){
-        var installButton = document.getElementById("install");
+        var installDiv = document.getElementById("installDiv");
+        var installButton = document.getElementById("installButton");
+        
         if(installButton !== null){
-            installButton.removeAttribute("hidden");
+            installDiv.removeAttribute("hidden");
             installButton.addEventListener("click", async () => {
                 if (!installPrompt) {
                     return;
@@ -16,7 +17,7 @@ window.addEventListener("beforeinstallprompt", (event) => {
                 const result = await installPrompt.prompt();
                 console.log(`Install prompt was: ${result.outcome}`);
                 installPrompt = null;
-                installButton.setAttribute("hidden", "");
+                installDiv.setAttribute("hidden", "");
             });
             complete = true;
         }{
